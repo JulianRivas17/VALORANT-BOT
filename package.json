@@ -1,0 +1,23 @@
+{
+    "name": "valorant-bot",
+    "version": "1.0.0",
+    "type": "commonjs",
+    "private": true,
+    "scripts": {
+      "build": "tsc -p .",
+      "start": "node dist/index.js",
+      "dev": "node --env-file=.env -r ts-node/register src/index.ts",
+      "register:guild": "node --env-file=.env -r ts-node/register src/register.ts guild",
+      "register:global": "node --env-file=.env -r ts-node/register src/register.ts global"
+    },
+    "dependencies": {
+      "discord.js": "^14.15.3",
+      "dotenv": "^16.4.5"
+    },
+    "devDependencies": {
+      "@types/node": "^20.14.12",
+      "ts-node": "^10.9.2",
+      "typescript": "^5.6.2"
+    }
+  }
+  
