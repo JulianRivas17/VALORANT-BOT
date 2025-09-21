@@ -12,7 +12,7 @@ const client = new Client({
 });
 
 const commands = new Collection<string, any>();
-[m apa, comp, comp_mapa, comps_mapa_all].forEach((mod: any) => {
+[mapa, comp, comp_mapa, comps_mapa_all].forEach((mod: any) => {
   commands.set(mod.data.name, mod);
 });
 
